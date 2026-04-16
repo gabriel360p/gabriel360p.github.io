@@ -1,0 +1,141 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#text-neon {
+    color: #fff;
+    /* font-family: ; */
+    text-shadow:
+        0 0 3px #fff,
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 25px #0fa,
+        0 0 40px #0fa,
+        0 0 60px #0fa,
+        0 0 80px #0fa,
+        0 0 130px #0fa;
+}
+
+body {
+    background-color: #01060c;
+    color: white;
+}
+
+#container-div-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#div-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    grid-row: 15px;
+}
+
+/* Quando a tela chegar a 600px, ela deve aplicar a seguinte configuração: */
+@media (max-width:600px) {
+    #div-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 15px;
+    }
+}
+
+
+.card {
+    background-color: #020b15;
+
+    /* 
+        usando as propriedades abaixo min-height e height criei
+         uma div responsiva de acordo com o conteúdo
+        dei um valor mínimo que ela deve ter, e que ela pode se adaptar automáticamente
+    */
+    min-height: 150px;
+    height: auto;
+
+    width: 200px;
+    word-break: break-all;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    transition: box-shadow 0.60s ease-in-out;
+    padding: 20px;
+}
+
+.card:hover {
+    /* border-color: #0fa; */
+    box-shadow:
+        /* 0 0 7px #fff, */
+        0 0 30px rgb(115, 243, 200);
+
+}
+
+.card-header-title {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.card-content {}
+
+#container-nome {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#container-foto {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+img {
+    border-radius: 100%;
+    width: 10em;
+    height: 10em;
+    /* propriedade que não conhecia, ele corta a imagem para não distorcer */
+    object-fit: contain;
+    transition: box-shadow 0.60s ease-in-out;
+}
+
+img:hover {
+    box-shadow: 0 0 25px rgb(115, 243, 200);
+}
+
+footer {
+    margin-top: 10px;
+    padding: 30px;
+}
+
+#div-footer {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: inside;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(115, 243, 200)
+}
+
+a:visited {
+    color: white;
+}
+
+a:active {
+    color: white
+}
+
+@media (max-width:600px) {}

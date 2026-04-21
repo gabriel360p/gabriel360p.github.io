@@ -1,120 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem eu sou</title>
-    <link rel="stylesheet" href="sryle.css">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav>
-
-    </nav>
     <main>
-        <section>
+        <picture class="picture-logo">
+            <img src="./assets/utilits/logo-1.png" alt="">
+        </picture>
 
-            <div>
-                <div id="container-foto">
+        <div class="main-div">
 
-                    <figure>
-                        <img src="eu.png" alt="foto-gabriel-costa">
-                        <figcaption></figcaption>
-                    </figure>
+            <div class="div-inputs">
+                <label for="of">Converter <b> de </b></label>
+                <input type="text" class="input of" readonly id="of" placeholder="R$ Real Brasileiro">
 
+                <label for="to">Converter <b>para</b></label>
+                <select class="input to" id="to">
+                    <option value="0" selected>US$ Dólar Americano</option>
+                    <option value="1">£ Libras</option>
+                    <option value="2">€ Euro</option>   
+                    <option value="3">₿ Bitcoin</option>
+                </select>
+
+                <label for="cotation-result"><b>Valor</b></label>
+                <input id="cotation-result" placeholder="Valor a ser convertido" type="number"
+                    class="input value-cotation">
+
+                <button class="btn-convert" type="button">Converter</button>
+            </div>
+
+            <div class="div-results">
+
+                <div class="country-div">
+                    <picture>
+                        <img src="./assets/icons/brasil-icon.png" alt="bandeira-país" class="country-flag">
+                        <legend>R$ Real Brasileiro</legend>
+                    </picture>
+                    <span class="value-input">
+                    </span>
                 </div>
 
-                <div id="container-nome">
-                    <h1 id="text-neon">Gabriel Costa</h1>
+                <div>
+                    <picture>
+                        <img src="./assets/utilits/down-arrow.png" alt="seta">
+                    </picture>
+                </div>
+
+                <div class="coin-div">
+                    <div>
+                        <picture>
+                            <img src="./assets/icons/eua-icon.png" alt="bandeira-moeda" class="country-flag-output">
+                        </picture>
+                    </div>
+                    <span class="value-output">
+                        Aguardando Valor
+                    </span>
                 </div>
 
             </div>
 
-            <div id="container-div-grid">
-                <div id="div-grid">
-
-                    <div class="card">
-                        <div  class="card-header">
-                            <p class="card-header-title">
-                                Sobre:
-                            </p>                            
-                        </div>
-                        <div  class="card-content">
-                            Olá, me chamo Gabriel! Meu sonho é ter um bom emprego pra ajudar minha família e mudar minha vida, estou buscando na programação uma vida melhor.
-                        </div>
-
-                    </div>
-
-                    <div class="card">
-                        <div  class="card-header">
-                            <p class="card-header-title">
-                                Metas:
-                            </p>                            
-                        </div>
-                        <div  class="card-content">
-                            <ol>
-                                <li>Sair da CLT até o final do ano kk</li>
-                                <li>Ajudar minha família</li>
-                                <li>Cuidar da minha saúde</li>
-                                <li>Aproveitar mais a vida</li>
-                                <li>Viajar o mundo</li>
-                                <li>Comprar o que eu quero kkk</li>
-                            </ol>
-                        </div>
-
-                    </div>
-
-                    <div class="card">
-                        <div  class="card-header">
-                            <p class="card-header-title">
-                                Pessoas que gostaria que estivessem no DevClub:
-                            </p>                            
-                        </div>
-                        <div  class="card-content">
-                            <ol>
-                                <li>Namorado</li>
-                                <li>Mãe</li>
-                                <li>Amigos (ajudar)</li>
-                            </ol>
-                        </div>
-
-                    </div>
-       
-                    <div class="card">
-                        <div  class="card-header">
-                            <p class="card-header-title">
-                                Contato:
-                            </p>                            
-                        </div>
-                        <div  class="card-content">
-                            <ol>
-                                <li>
-                                    <a target="_blank" href="https://www.linkedin.com/in/gabriel-costa-silva-8871a7403/">Linkedin</a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="tel:5584994686598">(84)99468-6598</a>
-                                </li>
-                                <li> <a target="_blank" href="mailto:gabrielcostasilva2710@gmail.com">gabrielcostasilva2710@gmail.com</a></li>
-                            </ol>
-                        </div>
-
-                    </div>
-                    
-
-                </div>
-
-            </div>
-
-        </section>
+        </div>
 
     </main>
-
-    <footer>
-        <div id="div-footer">
-            Desafio HTML 'Quem eu sou' 
-        </div>
-    </footer>
 </body>
+<script src="script.js"></script>
 
 </html>

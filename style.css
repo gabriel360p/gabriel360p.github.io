@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background-color: #8A51FC;
+    background-color: #025928;
 }
 
 main {
@@ -17,7 +17,6 @@ main {
     height: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 label {
@@ -27,37 +26,38 @@ label {
     gap: 4px;
     font-size: 14px;
     font-weight: 400;
+    width: 85%;
 }
 
-.picture-logo img {
-    width: 90%;
-    height: 85%;
-}
-
-.picture-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1 {
+    text-align: center;
+    font-size: x-large;
+    color: #555555;
+    padding: 5px;
 }
 
 .main-div {
     display: flex;
-    height: 100%;
+    height: 50%;
     width: 85%;
     align-items: center;
+    justify-content: center;
     background-color: #ebeaea;
     border-radius: 20px;
-    margin-bottom: 30px;
 
 }
 
 .div-inputs {
-    width: 100%;
-    padding: 40px 30px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    min-width: 75%;
 }
 
 .input {
-    width: 100%;
+    width: 85%;
     height: 48px;
     border-radius: 5px;
     border: none;
@@ -71,12 +71,13 @@ label {
     /* Usando a família de propriedades caret-* */
 }
 
+
 .div-inputs button {
-    width: 100%;
+    width: 85%;
     height: 48px;
     border-radius: 5px;
     margin-top: 5px;
-    background-color: #772FD3;
+    background-color: #03a63c;
     font-size: 18px;
     font-weight: 700;
     color: white;
@@ -89,14 +90,11 @@ label {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 35px;
-    margin-right: 25px;
     background-color: transparent;
-    border: 2px solid #772FD3;
+    border: 2px solid #025928;
     border-radius: 20px;
-    width: 30%;
+    width: 15%;
     height: 65%;
-    margin-bottom: 30px;
 }
 
 .country-div,
@@ -106,27 +104,34 @@ label {
     line-height: 25px;
 }
 
-.coin-div div{
+.coin-div div {
     display: block;
 }
 
-.coin-div span{
+.coin-div span {
     overflow: scroll;
 
 }
+
 .country-flag,
 .country-flag-output {
-    width: 12%;
+    width: 15%;
 }
 
 legend {
-    font-size: 14px;
-    color: #777777;
-    font-weight: 400;
+    font-size: 12px;
+    color: #555555;
+    font-weight: 700;
+}
+
+.value-input {
+    font-size: 12px;
+    color: #555555;
+    font-weight: 700;
 }
 
 span {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
     color: #555555;
     width: 80%;
@@ -144,21 +149,38 @@ button:active {
     opacity: 20%;
 }
 
-@media screen and (max-width:700px) {
-
-    .picture-logo img {
-        width: 85%;
-        height: 80%;
-    }
+@media screen and (max-width:795px) {
 
     .main-div {
         flex-direction: column;
+        height: 85%;
         margin-bottom: 30px;
+        padding-top: 50px;
     }
 
     .div-results {
         width: 70%;
-        height: 80%;
+        height: 65%;
+        margin-top: 35px;
+        margin-bottom: 30px;
     }
 
+    input,
+    button,
+    .div-inputs,
+    label {
+        width: 85%;
+    }
+
+    .country-flag,
+    .country-flag-output {
+        width: 14%;
+    }
+
+    .country-div,
+    .coin-div {
+        text-align: center;
+        padding: 2px 0px;
+        line-height: 25px;
+    }
 }
